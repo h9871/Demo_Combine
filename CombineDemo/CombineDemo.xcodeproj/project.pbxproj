@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5D1231AA281E50F000F2C00A /* CombineVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1231A9281E50F000F2C00A /* CombineVM.swift */; };
 		5D1231AC281E51C900F2C00A /* Receiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1231AB281E51C900F2C00A /* Receiver.swift */; };
+		5D1231AE281E5F3F00F2C00A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5D1231AD281E5F3F00F2C00A /* README.md */; };
 		5DB2CEB8281E4C3D005F0FDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB2CEB7281E4C3D005F0FDA /* AppDelegate.swift */; };
 		5DB2CEBA281E4C3D005F0FDA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB2CEB9281E4C3D005F0FDA /* SceneDelegate.swift */; };
 		5DB2CEBC281E4C3D005F0FDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB2CEBB281E4C3D005F0FDA /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		5D1231A9281E50F000F2C00A /* CombineVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineVM.swift; sourceTree = "<group>"; };
 		5D1231AB281E51C900F2C00A /* Receiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receiver.swift; sourceTree = "<group>"; };
+		5D1231AD281E5F3F00F2C00A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5DB2CEB4281E4C3D005F0FDA /* CombineDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB2CEB7281E4C3D005F0FDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DB2CEB9281E4C3D005F0FDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 		5DB2CEAB281E4C3D005F0FDA = {
 			isa = PBXGroup;
 			children = (
+				5D1231AD281E5F3F00F2C00A /* README.md */,
 				5DB2CEB6281E4C3D005F0FDA /* CombineDemo */,
 				5DB2CEB5281E4C3D005F0FDA /* Products */,
 			);
@@ -157,6 +160,7 @@
 			files = (
 				5DB2CEC4281E4C3E005F0FDA /* LaunchScreen.storyboard in Resources */,
 				5DB2CEC1281E4C3E005F0FDA /* Assets.xcassets in Resources */,
+				5D1231AE281E5F3F00F2C00A /* README.md in Resources */,
 				5DB2CEBF281E4C3D005F0FDA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
