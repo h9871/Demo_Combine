@@ -2,9 +2,9 @@
 [Swift] Combine 을 이해하기
 
 # Subject
-### 외부에서 값을 대입할 수 있는 Publisher 프로토콜
-### send 메소드를 통해 stream 에 값을 대입
-### PassthroughSubject, CurrentValueSubject 기본으로 제공
+#### 외부에서 값을 대입할 수 있는 Publisher 프로토콜
+#### send 메소드를 통해 stream 에 값을 대입
+#### PassthroughSubject, CurrentValueSubject 기본으로 제공
 
 [PassthroughSubject]
 - 초기값이 없음
