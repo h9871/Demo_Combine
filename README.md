@@ -10,25 +10,25 @@
 - 초기값이 없음
 - 직전에 방출한 값을 저장하지 않음
 
-let subject = PassthroughSubject<String, Never>()
-subject.send("A")
-// A
-subject.send("B") 
-// B
-subject.send(completion: .finished)
-// finished 
+let subject = PassthroughSubject<String, Never>()  
+subject.send("A")  
+// A  
+subject.send("B")  
+// B  
+subject.send(completion: .finished)  
+// finished  
 
 [CurrentValueSubject]
 - 초기값이 있음
 - 직전에 방출한 값을 저장함
 
-let subject = CurrentValueSubject<String, Never>("A")
-// A
-subject.send("B")
-// B
-subject.send("C")
-// C
-subject.send(.finished)
-// finished
+let subject = CurrentValueSubject<String, Never>("A")  
+// A  
+subject.send("B")  
+// B  
+subject.send("C")  
+// C  
+subject.send(.finished)  
+// finished  
 
 
