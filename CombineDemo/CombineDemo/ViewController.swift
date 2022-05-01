@@ -58,6 +58,17 @@ class ViewController: UIViewController {
         return button
     }()
     
+    /// 버튼3
+    private lazy var forthButton: UIButton = {
+        let button = UIButton(type: .system, primaryAction: UIAction(handler: { _ in
+            // 2. 두 개의 문자 출력
+            self.combineVM.forthSinkCombine()
+        }))
+        button.setTitle("Forth Sink", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
     /// Combine 뷰 모델
     let combineVM = CombineVM()
     
@@ -78,6 +89,8 @@ class ViewController: UIViewController {
         self.mainStackView.addArrangedSubview(self.secondButton)
         // 세번째 버튼 생성
         self.mainStackView.addArrangedSubview(self.thirdButton)
+        // 네번째 버튼 생성
+        self.mainStackView.addArrangedSubview(self.forthButton)
         
         // 레이아웃 설정
         self.updateLayout()
@@ -116,7 +129,9 @@ class ViewController: UIViewController {
             // 두번째 버튼
             self.secondButton.heightAnchor.constraint(equalToConstant: 50),
             // 세번째 버튼
-            self.thirdButton.heightAnchor.constraint(equalToConstant: 50)
+            self.thirdButton.heightAnchor.constraint(equalToConstant: 50),
+            // 네번째 버튼
+            self.forthButton.heightAnchor.constraint(equalToConstant: 50)
         ]
         layoutList.append(contentsOf: buttonLayout)
         

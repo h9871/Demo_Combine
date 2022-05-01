@@ -67,3 +67,17 @@ final class SecondReceiver {
             .store(in: &self.subScriptions)
     }
 }
+
+final class ThirdReceiver {
+    // AnyCancellable - Combine
+    var subScriptions = Set<AnyCancellable>()
+    
+    init(_ subject: PassthroughSubject<String,Never>) {
+        
+        // 오브젝트에 대입
+        // assign (SomeObject 클래스의 \.value Value 프로퍼티에 대입한다)
+        subject
+            .assign(to: \.value, on: SomeObject())
+            .store(in: &subScriptions)
+    }
+}

@@ -73,4 +73,20 @@ class CombineVM {
         subject.send("E")
         subject.send(completion: .finished)
     }
+    
+    /// 구독 공통 처리
+    func forthSinkCombine() {
+        let subject = PassthroughSubject<String,Never>()
+        
+        // 두개가 동시에 수신 시 First 와 Second 의 순서는 보장되지 않는다
+        
+        let receiver = ThirdReceiver(subject)
+        // 이벤트 전송
+        subject.send("A")
+        subject.send("B")
+        subject.send("C")
+        subject.send("D")
+        subject.send("E")
+        subject.send(completion: .finished)
+    }
 }
